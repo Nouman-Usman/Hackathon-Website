@@ -12,6 +12,12 @@
   -ms-flex-pack: start;
   justify-content: start;
 }
+@font-face {
+  font-family: 'Poppins ExtraBold Italic';
+  src: url('./fonts/Poppins-ExtraBoldI.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
 body {
   font-family: "Muli", sans-serif;
   font-weight: normal;
@@ -140,7 +146,8 @@ body {
 
 #schedule .schedule-item h4 {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 900;
+  font-family: 'Poppins ExtraBold Italic', sans-serif;
   margin-bottom: 5px;
 }
 
