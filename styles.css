@@ -1,0 +1,135 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.meet-team{
+    text-align: center;
+    text-decoration: underline;    
+    color: #491b89;
+    font-size: 2em;
+    margin-top: 1em;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    background-color: #c7c7c7c8;
+    
+}
+
+.team {
+    /* background-color: #f7f7f7; */
+    padding: 2em;
+    /* border: 1px solid #ddd; */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+.footer_bottom a {
+    text-decoration: none;
+    position: relative;
+}
+
+.footer_bottom a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="2"><path d="M0 1 Q 5 0, 10 1 T 20 1 T 30 1 T 40 1 T 50 1 T 60 1 T 70 1 T 80 1 T 90 1 T 100 1" stroke="black" fill="transparent"/></svg>') repeat-x;
+}   
+.organizers{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1em;
+    text-align: center;
+}
+.team-members h2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1em;
+    /* text must be come on the top of the first line */
+    text-align: center;
+
+}
+
+.team-member {
+    margin: 20px;
+    width: calc(30.33% - 20px);
+    /* background-color: #fff; */
+    padding: 1em;
+    border-radius: 1vw;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.meet-teams{
+    text-align: center;
+    text-decoration: underline;    
+    color: #491b89;
+    font-size: 2em;
+    margin-top: 1em;
+}
+.team-member img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.team-member img:hover {
+    transform: scale(1.1);
+}
+
+.team-member a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.team-member a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.team-member h2 {
+    /* align center */
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    clear: both;
+}
+
+/* Media queries for responsiveness */
+
+/* Tablet and mobile devices */
+@media (max-width: 768px) {
+    .team-member {
+        width: calc(50% - 20px);
+    }
+}
+
+/* Mobile devices only */
+@media (max-width: 480px) {
+    .team-member {
+        width: 100%;
+        margin: 10px;
+    }
+    .team-members {
+        flex-direction: column;
+    }
+}
